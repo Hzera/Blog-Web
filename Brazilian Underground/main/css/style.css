@@ -10,31 +10,35 @@ html, body{
     background-color: #fff;
     overflow-wrap: break-word;
     font-size: 16px;
+    background-color: var(--bg-var);
     }
-    /*      | Default |       */
+/*      | Default |       */
     
     :root{
 
-        /*      | Colors |       */
-        --header:#f0b719;  
+    /*      | Colors |       */
+        --header:#ffd501;  
         --white:#ffffff;
         --text-light:#eeeeee;
         --text-g59:#aaaaaada;
         --bg:#303030;
         --bg-var:#404040;
-        /*      | Colors |       */
+        --greenside:#bdf07a;
 
-        /*      | Custom Fonts |       */
+        --braz:linear-gradient(120deg, #bffb31 0%, #cccccc 100%);
+    /*      | Colors |       */
+
+    /*      | Custom Fonts |       */
         --CorinthiaRegular:'CorinthiaRegular', cursive;
         --CorinthiaBold:'CorinthiaBold', cursive;
         --CourgetteRegular:'CourgetteRegular', cursive;
         --ImPicaRegular:'ImPicaRegular', cursive;
         --ImPicaItalica:'ImPicaItalica', cursive;
         --NiconneRegular:'NiconneRegular', cursive;
-        /*      | Custom Fonts |       */
+    /*      | Custom Fonts |       */
     }
     
-        /*      | Global |       */
+    /*      | Global |       */
     
     a{
         text-decoration: none;
@@ -51,7 +55,7 @@ html, body{
         list-style-type: none;
     }
     
-        /*      | Global |       */
+    /*      | Global |       */
     
         /*      | Navigation |       */
     
@@ -67,7 +71,26 @@ html, body{
         .nav .nav-menu{    
             justify-content: space-between;
         }
+
+        .nav .toggle-collapse{
+            position: absolute;
+            top: 0%;
+            width: 90%;
+            cursor: pointer;
+            display: none;
+        }
+
+        .nav .toggle-collapse .toggle-icons{
+            display: flex;
+            justify-content: flex-end;
+            padding: 1.8rem 0;
+        }
         
+        .nav .toggle-collapse .toggle-icons i{
+            font-size: 1.4rem;
+            color:var(--text-light);
+        }
+
         .nav .nav-items{
             display: flex;
             margin: 0;
@@ -78,14 +101,18 @@ html, body{
             font-size: 1.1rem;
             position: relative;
             font-family: var(--CourgetteRegular);
-            font-size: 1.1rem;
+        }
+        .nav .nav-items .nav-link:hover{
+            background-color: var(--greenside);
+    
         }
         
         .nav .nav-brand a{
             padding: 0.6rem 0;
             display: block;
             font-family: var(--CorinthiaRegular);
-            font-size: 2.4rem;
+            font-size: 2.6rem;
+            text-shadow: #ffffff 0px 0.2px 0.1px;
         }
         
         .nav .social{
@@ -95,9 +122,91 @@ html, body{
         .nav .social i{
             padding: 0 .2rem;
         }
-    
-    .toggle-icons{
-        visibility: hidden;
-    }
+        .nav .social i:hover{
+            color: var(--greenside);
+        }
     
         /*      | Navigation |       */
+
+    /*      | Main |       */
+
+    /*      | The Header |       */
+
+    main .site-header{
+        background: url(../assets/background1.png);
+        background-size:cover;
+        height: 113vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .site-header .site-background{
+        padding-top: 23vh;
+        text-align: center;
+    }
+    
+    main .site-header h3{
+        margin: .3rem;
+        font-size: 80px;
+        color: var(--greenside);
+        font-family: var(--CorinthiaBold);
+        text-shadow: black 3px 2px 1px;
+    }
+    
+    main .site-header h2{
+        margin: .3rem;
+        font-size: 36px;
+        color: var(--text-light);
+        text-shadow: black 4px 2px 1px;
+        font-family: var(--ImPicaRegular);
+    }
+
+    /*      | The Header |       */
+
+
+
+    /*      | Main |       */
+
+/*      | Viewport 750px |       */
+
+@media only screen and (max-width:750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+}
+
+/*      | Viewport 750px |       */
+
+/*      | Viewport 550px |       */
+
+    @media only screen and (max-width: 550px){
+        .nav{
+            height: 45vh;
+        }
+        main .blog{
+            height: 125vh;
+        }
+    
+        .site-content .post-content > .post-image .post-info{
+            display: none;
+        }
+    
+        footer.footer .container > div{
+            padding:  1rem .9rem !important;
+        }
+    
+        footer .rights{
+            padding: 0 1.4rem;
+            text-align: center;
+        }
+    
+        nav .toggle-collapse{
+            width: 80% !important;
+        }
+    
+    }
+/*      | Viewport 550px |       */
