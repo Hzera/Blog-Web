@@ -17,7 +17,7 @@ html, body{
     :root{
 
     /*      | Colors |       */
-        --header:#ffd501;  
+        --header:#ceae0f;  
         --white:#ffffff;
         --text-light:#eeeeee;
         --text-g59:#aaaaaada;
@@ -41,8 +41,8 @@ html, body{
     /*      | Global |       */
     
     a{
+        color: var(--greenside);
         text-decoration: none;
-        color: var(--text-g59);
     }
     
     .flex-row{
@@ -55,6 +55,15 @@ html, body{
         list-style-type: none;
     }
     
+    button.btn{
+        border-radius: 2rem;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        font-family: var(--ImPicaRegular);
+        cursor: pointer;
+    }
+
+    
     /*      | Global |       */
     
         /*      | Navigation |       */
@@ -63,7 +72,7 @@ html, body{
             background: var(--bg);
             padding: 0 2rem;
             height: 0rem;
-            min-height: 10vh;
+            min-height: 8vh;
             overflow: hidden;
             transition: height 1s ease-in-out;
         }
@@ -96,6 +105,7 @@ html, body{
             margin: 0;
         }
         
+
         .nav .nav-items .nav-link{
             padding: 1.6rem 1rem;
             font-size: 1.1rem;
@@ -103,8 +113,7 @@ html, body{
             font-family: var(--CourgetteRegular);
         }
         .nav .nav-items .nav-link:hover{
-            background-color: var(--greenside);
-    
+            background-color: var(--header);
         }
         
         .nav .nav-brand a{
@@ -123,9 +132,13 @@ html, body{
             padding: 0 .2rem;
         }
         .nav .social i:hover{
-            color: var(--greenside);
+            color: var(--header);
         }
-    
+        
+        .collapse{
+            height: 32rem;
+        }
+
         /*      | Navigation |       */
 
     /*      | Main |       */
@@ -142,6 +155,7 @@ html, body{
 
     main .site-header .site-background{
         padding-top: 23vh;
+        padding-right: 30vh;
         text-align: center;
     }
     
@@ -161,9 +175,61 @@ html, body{
         font-family: var(--ImPicaRegular);
     }
 
+    main .site-header .btn{
+        color: white;
+        margin: 1.8rem;
+        border: 1px solid var(--white);
+        background: transparent;
+    }
+    
+    main .site-header .btn:hover{
+        background: transparent;
+        border: 1px solid var(--header);
+        color: var(--header);
+    }
+
     /*      | The Header |       */
 
+    /*      | The Carousel |       */
 
+    main .blog{
+        background: url('../assets/detail.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 100vh;
+        width: 100%;
+        background-size: 65%;
+    }
+
+    main .blog .blog-post{
+        padding-top: 7rem;
+    }
+
+    main .blog-post .blog-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 80%;
+        margin: 3rem 2rem;
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.205);
+    }
+
+    main .blog-content .blog-title{
+        padding: 2rem 0;
+    }
+    
+    main .blog-content .btn-blog{
+        padding: .7rem 2rem;
+        background: var(--sky);
+        margin: .5rem;
+    }
+    
+    main .blog-content span{
+        display: block;
+    }
+
+
+    /*      | The Carousel |       */
 
     /*      | Main |       */
 
@@ -207,6 +273,5 @@ html, body{
         nav .toggle-collapse{
             width: 80% !important;
         }
-    
     }
 /*      | Viewport 550px |       */
