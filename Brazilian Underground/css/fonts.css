@@ -1,0 +1,67 @@
+
+/*  font-family: Abel  */
+@font-face {
+    font-family: Abel;
+    src: url('../fonts/Abel/Abel-Regular.ttf');
+}
+
+/*  font-family: Anton  */
+@font-face {
+    font-family: Anton;
+    src: url('../fonts/Anton/Anton-Regular.ttf');
+}
+
+/*  font-family: Josefin  */
+@font-face {
+    font-family: Josefin;
+    src: url('../fonts/Josefin_Sans/JosefinSans-Regular.ttf');
+}
+
+/*  font-family: Lexend  */
+@font-face {
+    font-family: Lexend;
+    src: url('../fonts/Lexend_Deca/LexendDeca-Regular.ttf');
+}
+
+/*  font-family: Livvic  */
+@font-face {
+    font-family: Livvic;
+    src: url('../fonts/Livvic/Livvic-Regular.ttf');
+}
+
+/* Font Corinthia */
+@font-face{
+    font-family: CorinthiaRegular;
+    src: url(../fonts/Corinthia/Corinthia-Regular.ttf);
+}
+
+@font-face{
+    font-family: CorinthiaBold;
+    src: url(../fonts/Corinthia/Corinthia-Bold.ttf);
+}
+/* Font Corinthia */
+
+/* Font Courgette */
+@font-face{
+    font-family: CourgetteRegular;
+    src: url(../fonts/Courgette/Courgette-Regular.ttf);
+}
+/* Font Courgette */
+
+/* Font Im Pica */
+@font-face{
+    font-family: ImPicaRegular;
+    src: url(../fonts/IM_Fell_DW_Pica/IMFellDWPica-Regular.ttf);
+}
+@font-face{
+    font-family: ImPicaItalica;
+    src: url(../fonts/IM_Fell_DW_Pica/IMFellDWPica-Italic.ttf);
+}
+/* Font Im Pica */
+
+/* Font Niconne */
+@font-face{
+    font-family: NiconneRegular;
+    src: url(../fonts/Niconne/Niconne-Regular.ttf);
+}
+/* Font Niconne */
