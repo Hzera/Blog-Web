@@ -97,7 +97,9 @@ p{
 
 /*      | Global |       */
 
-/* --------------- navbar ----------------- */
+
+
+/*      | Navigation |       */
 
 .nav{
     background: #0f0f0f;
@@ -176,12 +178,15 @@ p{
     color: var(--yellowside);
 }
 
-/* -------x------- navbar ---------x------- */
+
+/*      | Navigation |       */
 
 
-/* ----------------- Main Content----------- */
+/*      | Main |       */
 
-/* --------------- Site title ---------------- */
+
+/*      | The Header |       */
+
 main .site-title{
     background: url('../assets/Background-image.png');
     background-size: cover;
@@ -211,9 +216,9 @@ main .site-title .btn:hover{
     color: var(--white);
 }
 
-/* --------x------ Site title --------x------- */
+/*      | The Header |       */
 
-/* --------------- Blog Carousel ------------ */
+/*      | The Carousel |       */
 
 main .blog{
     background: url('../assets/Abract01.png');
@@ -276,10 +281,10 @@ section .container .owl-nav{
     outline: none;
 }
 
+/*      | The Carousel |       */
 
-/* -------x------- Blog Carousel -----x------ */
 
-/* ---------------- Site Content ----------------*/
+/*      | All Content |       */
 
 main .site-content{
     display: grid;
@@ -351,10 +356,9 @@ main .post-content .post-title a{
     color: black;
 }
 
-/* -------x-------- Site Content --------x-------*/
+/*      | All Content |       */
 
-
-/* --------------- Sidebar ----------------------- */
+/*      | Sidebar |       */
 
 .site-content > .sidebar .category-list{
     font-family: var(--ImPicaRegular);   
@@ -428,13 +432,12 @@ main .post-content .post-title a{
     margin: .4rem .6rem;
 }
 
+/*      | Sidebar |       */
 
-/* -------x------- Sidebar -----------x----------- */
-
-/* ---------x------- Main Content -----x----- */
+/*      | Main |       */
 
 
-/* ----------------- Footer --------------------- */
+/*      | Footer |       */
 
 footer.footer{
     height: 100%;
@@ -514,9 +517,9 @@ footer.footer .move-up span:hover{
     cursor: pointer;
 }
 
-/* ---------x------- Footer ----------x---------- */
+/*      | Footer |       */
 
-/*              Viewport less then or equal to 1130px            */
+/*              | Viewport -/= 1130px |            */
 
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info{
@@ -535,10 +538,10 @@ footer.footer .move-up span:hover{
 
 }
 
-/*      x       Viewport less then or equal to 1130px    x     */
+/*              | Viewport -/= 1130px |            */
 
 
-/*              Viewport less then or equal to 750px            */
+/*              | Viewport -/= 750px |            */
 
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav .nav-items{
@@ -560,10 +563,9 @@ footer.footer .move-up span:hover{
 }
 
 
-/*        x      Viewport less then or equal to 750px       x     */
+/*              | Viewport -/= 750px |            */
 
-
-/*              Viewport less then or equal to 520px            */
+/*              | Viewport -/= 520px |            */
 
 @media only screen and (max-width: 520px){
     main .blog{
@@ -588,5 +590,6 @@ footer.footer .move-up span:hover{
     }
 
 }
+/*              | Viewport -/= 520px |            */
 
-/*        x      Viewport less then or equal to 520px       x     */
+/*              | End of the Style, Thanks to Read and All the Credits to Geek |            */
