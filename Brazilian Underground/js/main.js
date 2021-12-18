@@ -12,18 +12,18 @@ const responsive = {
         items: 3
     }
 }
-
+    // Toggle Menu //
 $(document).ready(function () {
 
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
-
-    /** click event on toggle menu */
     $toggleCollapse.click(function () {
         $nav.toggleClass('collapse');
     })
 
-    // owl-crousel for blog
+    // Toggle Menu //
+    
+    // Owl Carousel //
     $('.owl-carousel').owlCarousel({
         loop: true,
         autoplay: false,
@@ -34,15 +34,19 @@ $(document).ready(function () {
         responsive: responsive
     });
 
-
-    // click to scroll top
+    // Owl Carousel //
+    
+    // Scroll to Move Up //
     $('.move-up span').click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 1000);
     })
+    // Scroll to Move Up //
 
     // AOS Instance
-    AOS.init();
-
+    AOS.init();   
+    // AOS Instance
 });
+
+    // End of Script //
